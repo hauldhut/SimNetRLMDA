@@ -1,7 +1,8 @@
 ## Environment Setup
 - **For Python-based Code**
   - *conda env create -f SimNetRLMDA.yml*: To run SimNetRLMDA
-  - *conda env create -f MAMFGAT_MHXGMDA.yml*: To run MAMFGAT and MHXGMDA
+  - *conda env create -f MAMFGAT.yml*: To run MAMFGAT
+  - *conda env create -f MHXGMDA.yml*: To run MHXGMDA
 - **For R-based Code**: To run MHDR, and visualize drug-disease associations
   - *Install R packages: RandomWalkRestartMH, igraph, foreach, doParallel, ROCR, ggplot2, Metrics, hash*
 
