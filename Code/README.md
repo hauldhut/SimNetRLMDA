@@ -1,4 +1,4 @@
-## Enviroment Setup
+## Environment Setup
 - **For Python-based Code**
   - *conda env create -f SimNetRLMDA.yml*: To run SimNetRLDR
   - *conda env create -f MAMFGAT_MHXGMDA.yml*: To run MAMFGAT and MHXGMDA
