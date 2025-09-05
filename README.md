@@ -1,7 +1,7 @@
-# SimNetRLDR: Similarity Network-based Representation Learning for Drug Repositioning
+# SimNetRLMDA: Similarity Network-based Representation Learning for the prediction of disease-miRNA associations
 
-- Drug repositioning, the identification of new therapeutic indications for existing drugs, offers a cost-effective alternative to traditional drug discovery. Computational approaches, particularly network-based and deep learning methods, have advanced the prediction of drug-disease associations. However, existing methods often rely on single disease similarity networks or heterogeneous networks incorporating drug-disease associations, which may limit prediction accuracy and cause data leakage. 
-- We propose SimNetRLDR, a novel method integrating drug and disease similarity networks with representation learning to overcome these limitations. Drug similarity networks were constructed using SMILES data, while disease similarity networks were built from MeSH and protein interaction data, integrated via a per-edge average method. Low-dimensional representations of drugs and diseases were learned using weighted graph attention networks, followed by XGBoost classification to predict drug-disease associations. 
+- SimNetRLMDA integrates multiple miRNA functional similarity networks, constructed from miRNA-target datasets (TargetScan, miRTarBase, miRWalk) independent of known disease-miRNA associations, with a MeSH-based disease similarity network, using graph attention networks (GATs) and a Multi-Layer Perceptron (MLP) to predict disease-miRNA associations.
+- By constructing similarity networks independent of known disease-miRNA associations and learning disease and miRNA representations separately, SimNetRLMDA eliminates data leakage and enables predictions for diseases and miRNAs without prior associations, unlike existing methods reliant on such data. 
 
 ![SimNetRLDR](https://github.com/hauldhut/SimNetRLDR/blob/main/Figure1.png)
 
