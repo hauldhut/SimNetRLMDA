@@ -1,4 +1,4 @@
-Method = "H1_Balanced"#/H1_Balanced/H3_Balanced/MH13_Balanced
+Method = "MH123_Balanced"#/H1_Balanced/H3_Balanced/MH123_Balanced
 gamma = 0.5
 
 start_time <- Sys.time()
