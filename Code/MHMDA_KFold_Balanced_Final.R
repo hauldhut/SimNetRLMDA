@@ -62,7 +62,8 @@ if(Method == "MH123_Balanced"){
   tau <- c(1)
 }
 
-DiSimNet <- read.delim("../Data/DiseaseSimNet_OMIM.txt",header = FALSE)  
+DiseaseSimNet = "DiseaseSimNet_OMIM"
+DiSimNet <- read.delim(paste0("../Data/",DiseaseSimNet,".txt"),header = FALSE)  
 
 
 DiSimNet.frame <- data.frame(DiSimNet[[1]], DiSimNet[[3]])
